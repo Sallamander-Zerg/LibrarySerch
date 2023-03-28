@@ -52,7 +52,7 @@ function App() {
           order +
           "&key=" +
           apiKey +
-          "&maxResults="
+          "&maxResults=30"
       )
       .then((data) => {
         console.log(data.data.items);
