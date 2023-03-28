@@ -7,7 +7,7 @@ function App() {
   const [book, setBook] = useState("");
   const [result, setResult] = useState([]);
   const [apiKey, setApiKey] = useState(
-    "AIzaSyAfGL1kO-Pc0tm4pMmVoG9L9PMBf_oGNeI"
+    "insert your Api key"
   );
   const [Col,setColCard]=useState(30);
   const [selectedCard, setSelectedCard] = useState({ link: "", name: "" });
@@ -52,7 +52,7 @@ function App() {
           order +
           "&key=" +
           apiKey +
-          "&maxResults=30"
+          "&maxResults="
       )
       .then((data) => {
         console.log(data.data.items);
